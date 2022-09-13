@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <link rel="shortcut icon" href="./img/Insta-Aba.webp" />
+    <link href="./style.css " rel="stylesheet" />
+  </head>
+  <body>
+    <div class="containerImgCel">
+      <img class="imgCel" src="./img/celular.png" />
+
+      <img id="TrocaImg1" class="img-gif" src="./img/insta1.png" />
+
+      <img id="TrocaImg2" class="img-gif" src="./img/insta2.png" />
+    </div>
+
+    <div class="containerItens">
+      <div class="containerForm">
+        <div class="containerLogo">
+          <img class="insta-logo" src="./img/insta-logo.png" />
+        </div>
+
+        <input
+          type="email"
+          placeholder="Número de telefone, nome de utilizador ou e-mail"
+        />
+        <input type="password" placeholder="Senha" />
+        <button type="button">Iniciar sessão</button>
+
+        <a
+          href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjYyOTIwMzE4LCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D"
+          class="IniciarFace"
+          >Iniciar sessão com o Facebook</a
+        >
+        <a class="TrocarSenha">Esqueceu a senha ?</a>
+      </div>
+
+      <div class="createAccount">
+        <p>Não tens uma conta ?<a class="LinkRegistro"> Regista-te</a></p>
+      </div>
+
+      <p class="paragrafoAplicação">Obtém a aplicação.</p>
+
+      <div class="containerApp">
+        <a href="#"><img class="logoApp" src="./img/google.png" /></a>
+        <a href="https://www.apple.com/pt/app-store/"
+          ><img class="logoApp" src="./img/ios.png"
+        /></a>
+      </div>
+    </div>
+  </body>
+  <script>
+    let imagemCell = document.getElementById('TrocaImg2')
+
+    function trocaImagem() {
+      if (imagemCell.style.opacity == 0) {
+        imagemCell.style.opacity = 1
+      } else {
+        imagemCell.style.opacity = 0
+      }
+    }
+
+    setInterval(() => {
+      trocaImagem()
+    }, 3000)
+  </script>
+</html>
